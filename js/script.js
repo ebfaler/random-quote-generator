@@ -85,8 +85,6 @@ function printQuote() {
     html += `<span class="tag"> ${chosenQuote.tag} </span>`
   }
 
-
-
   html += `</p>`
   return document.getElementById('quote-box').innerHTML = html;
 
@@ -107,7 +105,6 @@ function updateBackgroundColor() {
   let colors = ['#6495ED', '#008B8B', '#8B008B'];
   let random = Math.floor(Math.random() * colors.length);
   let randomColor = colors[random];
-
   document.body.style.background = randomColor;
 
 };
