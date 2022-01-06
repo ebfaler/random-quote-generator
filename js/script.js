@@ -38,9 +38,9 @@ var quotes = [
     quote: 'Money doesn`t always bring happiness. People with ten million dollars are no happier than people with nine million dollars.',
     source: 'Hobart Brown',
     tag: 'tags: money, happines'
-  
-  }, 
-    
+
+  },
+
   {
     quote: 'The best doctor in the world is the veterinarian. He can`t ask his patients what is the matter-he`s got to just know.',
     source: 'Will Rogers',
@@ -84,7 +84,7 @@ function printQuote() {
   if (chosenQuote.hasOwnProperty('tag')) {
     html += `<span class="tag"> ${chosenQuote.tag} </span>`
   }
-  
+
 
 
   html += `</p>`
@@ -109,7 +109,7 @@ function updateBackgroundColor() {
   let randomColor = colors[random];
 
   document.body.style.background = randomColor;
-    
+
 };
 
 document.getElementById('load-quote').addEventListener("click", updateBackgroundColor);
@@ -118,21 +118,11 @@ document.getElementById('load-quote').addEventListener("click", updateBackground
  * the quote on the page automatically updates at regular intervals.
 ***/
 
-// function setTimer() {
-
-// setInterval(printQuote, 3000);
-// setInterval(updateBackgroundColor,3000);
-
-// }
-
-// setTimer();
-
 function setTimer() {
 
   printQuote();
   updateBackgroundColor();
-  
-  };
 
-  setInterval(setTimer, 3000);
-  
+};
+
+setInterval(setTimer, 3000);
